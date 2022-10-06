@@ -246,5 +246,42 @@ string conteudoArquivo = File.ReadAllText("Arquivos/vendas.json");
 List<Venda> listaVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
 
 foreach(Venda venda in listaVenda){
-    Console.WriteLine($"Id: {venda.Id}, Produto: {venda.Produto}, \nPreço: {venda.Preco}, Data: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}");
+    Console.WriteLine($"\nId: {venda.Id}, Produto: {venda.Produto}, \nPreço: {venda.Preco}, Data: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}" +
+                      $"{(venda.Desconto.HasValue ? $", Desconto de {venda.Desconto}" : "")}\n");
 }
+
+//Tipos especiais
+
+//Variáveis com "?" na frente são os que permitem receber vaores nulos
+bool? desejaReceberEmail = null;
+
+if(desejaReceberEmail.HasValue && desejaReceberEmail.Value){
+    Console.WriteLine("O usuário optou por receber e-Mail");
+}
+else{
+    Console.WriteLine("o usuário não respondeu, ou optou por não receber e-Mail.");
+}
+
+Console.WriteLine("\nTipo anônimo\n");
+
+//Tipo anônimo
+var TipoAnonimo = new { NomeTA = "Gabro", Surneim = "Piere", Alturata = 1.80 };
+
+Console.WriteLine(TipoAnonimo.NomeTA);
+Console.WriteLine(TipoAnonimo.Surneim);
+Console.WriteLine(TipoAnonimo.Alturata);
+
+Console.WriteLine("\nTipo anônimo em coleção\n");
+
+var listaAnonima = listaVenda.Select(x => new { x.Produto, x.Preco });
+
+foreach(var venda in listaAnonima){
+    Console.WriteLine("Produto: " + venda.Produto + "// Preço: " + venda.Preco);
+}
+
+Console.WriteLine("\nVariável dinâmica\n");
+
+//tipo se altera conforme necessário
+dynamic variavelDinamica = 4;
+
+Console.WriteLine($"Tipo da variável: {variavelDinamica.GetType()}, Valor {variavelDinamica}");

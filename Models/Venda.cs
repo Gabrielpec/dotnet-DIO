@@ -20,5 +20,8 @@ namespace ExemploExplorando.Models
         public string Produto { get; set; }
         public decimal Preco { get; set; }
         public DateTime DataVenda { get; set; }
+        
+        //Interrogação permite que a propriedade seja nula
+        public decimal? Desconto { get; set; }
     }
 }
