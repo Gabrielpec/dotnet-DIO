@@ -34,9 +34,9 @@ No caso de um objeto, o nome e a referência ficam na **Stack**, enquanto o obje
 <br/><br/>
 ## Limpeza de memória em C Sharp
 <br/><br/>
-Quando um método é encerrado, o gerenciamento do C# "mata" os processos em memória stack
+Quando um método é encerrado, o gerenciamento do C# "mata" os processos de variáveis em memória stack, assim contribuindo para que o sistema não seja tão poluído e pesado.
 
 <br/>
 
 ### Garbage collector (GC)
-O Garbage collector mata os processos no heap quando eles não recebem referências
+O Garbage collector encerra os processos no heap quando não recebem referências da stack
