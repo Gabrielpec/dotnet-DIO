@@ -285,3 +285,27 @@ Console.WriteLine("\nVariável dinâmica\n");
 dynamic variavelDinamica = 4;
 
 Console.WriteLine($"Tipo da variável: {variavelDinamica.GetType()}, Valor {variavelDinamica}");
+
+//Classe genérica
+
+MeuArray<int> arrayinteiro = new MeuArray<int>();
+
+arrayinteiro.AdicionarElementoArray(30);
+
+Console.WriteLine(arrayinteiro[0]);
+
+
+MeuArray<string> arraystring = new MeuArray<string>();
+
+arraystring.AdicionarElementoArray("Test");
+
+Console.WriteLine(arraystring[0]);
+
+//Método de extensão 
+int numburo = 20;
+
+bool par = numburo.Epar();
+
+string mensag = "O número " + numburo + " é " + (par ? "par" : "impar");
+
+Console.WriteLine(mensag);
