@@ -11,7 +11,7 @@ Dependendo do tipo de variável, ela será alocada em diferentes tipos de memór
 
 **Essas vão para o tipo Stack**
 
-int a = 5;
+int a = 5;<br/>
 int b = 10;
 
 **Essa vai para a Stack e Heap**
