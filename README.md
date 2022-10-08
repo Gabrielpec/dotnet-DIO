@@ -30,3 +30,13 @@ No caso de um objeto, o nome e a referência ficam na **Stack**, enquanto o obje
 
 ![Preview image](/Arquivos/stackeheap.png)
 ###### Imagem retirada do curso de .Net da DIO, de Leonardo Buta
+
+<br/><br/>
+## Limpeza de memória em C Sharp
+<br/><br/>
+Quando um método é encerrado, o gerenciamento do C# "mata" os processos em memória stack
+
+<br/>
+
+### Garbage collector (GC)
+O Garbage collector mata os processos no heap quando eles não recebem referências
