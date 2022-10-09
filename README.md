@@ -40,3 +40,16 @@ Quando um método é encerrado, o gerenciamento do C# "mata" os processos de var
 
 ### Garbage collector (GC)
 O Garbage collector encerra os processos no heap quando não recebem referências da stack
+
+<br/><br/>
+## Tipos de valor e referências
+<br/><br/>
+
+### Tipo de valor: Uma variável de um tipo de valor contém uma instância do tipo.
+##### Os tipos de valores recebem variáveis simples, como INT, Bool, Double, String...
+##### Eles recebem o nome de tipos primitivos!
+
+<br/>
+
+### Tipo de referência: Uma variável de um tipo de referência contém uma referência a uma instância do tipo.
+##### A referência somente armazena o nome da variável na **Stack**, e faz uma ligação com o objeto/valor que fica na memória **Heap**.
