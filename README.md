@@ -53,3 +53,12 @@ O Garbage collector encerra os processos no heap quando não recebem referência
 
 ### Tipo de referência: Uma variável de um tipo de referência contém uma referência a uma instância do tipo.
 ##### A referência somente armazena o nome da variável na **Stack**, e faz uma ligação com o objeto/valor que fica na memória **Heap**.
+
+<br/>
+
+#### **Lembrete: Quando uma instância chama outra instância não é criado outro objeto, os dois fazem referência para o mesmo na Heap** 
+
+<br/>
+
+![Preview image](/Arquivos/sameref.png)
+###### Imagem retirada do curso de .Net da DIO, de Leonardo Buta
