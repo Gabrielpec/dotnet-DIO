@@ -62,3 +62,21 @@ O Garbage collector encerra os processos no heap quando não recebem referência
 
 ![Preview image](/Arquivos/sameref.png)
 ###### Imagem retirada do curso de .Net da DIO, de Leonardo Buta
+
+<br/><br/>
+
+## **Orientação a objetos**
+
+<br/><br/>
+
+### **Abstração**
+Abstração na orientação a objetos, é o conceito de você abstrair um sistema, isso é, você inserir apenas o que é necessário no contexto do seu sistema, por exemplo:
+
+Um sistema de babearia não precisa do grau de escolaridade nem data de nascimento do cliente.</br>
+Já o sistema de uma escola precisa.
+
+### **Encapsulamento**
+Consiste em esconder o que ocorre no seu código, por motivos de segurança e organização.<br/>
+Isso ocorre geralmente ocultando uma função ou modificando algo na própria classe.
+![Preview image](/Arquivos/encapsulamentoexemplo.png)
+###### Imagem retirada do curso de .Net da DIO, de Leonardo Buta
