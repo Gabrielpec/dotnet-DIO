@@ -309,3 +309,26 @@ bool par = numburo.Epar();
 string mensag = "O número " + numburo + " é " + (par ? "par" : "impar");
 
 Console.WriteLine(mensag);
+
+AlunoHeranca a1 = new AlunoHeranca("Gabo");
+
+a1.Idade = 19;
+a1.nota = 8.5;
+
+a1.Apresentar();
+
+AlunoPaisHeranca aph1 = new AlunoPaisHeranca("Nomenilson");
+
+aph1.Apresentar();
+
+ProfessorHeranca prof1 = new ProfessorHeranca("Professildo");
+
+prof1.Idade = 39;
+prof1.salario = 1000;
+
+prof1.Apresentar();
+
+Corrente ct = new Corrente();
+
+ct.creditar(500);
+ct.ExibirSaldo();

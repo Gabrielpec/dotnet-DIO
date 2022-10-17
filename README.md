@@ -80,3 +80,85 @@ Consiste em esconder o que ocorre no seu código, por motivos de segurança e or
 Isso ocorre geralmente ocultando uma função ou modificando algo na própria classe.
 ![Preview image](/Arquivos/encapsulamentoexemplo.png)
 ###### Imagem retirada do curso de .Net da DIO, de Leonardo Buta
+<br/>
+
+### **Herança**
+O conceito de herança consiste em criar uma classe(classe mãe) com atributos e métodos que podem ser passados para outras classes(classes filhas), assim evitando repetição de código.
+
+**Por exemplo:** Aluno e Professor possuem os atributos Nome:string, Idade:int e o método apresentar.<br/>
+Então pode ser criado uma classe chamada Pessoa, que recebe Nome:string, Idade:int e o apresentar(), E assim herdando para as classes filhas (Aluno e Professor) os atributos e métodos, apenas inserindo em cada classe o que for necessário.
+
+Para realizar uma herança se utiliza dois pontos
+
+public class Pessoa{
+    Nome;
+    Idade;
+
+    Apresentar();
+}
+
+### **A classe Aluno herda de Pessoa** <br/>
+public class Aluno : Pessoa{
+
+}
+
+**Classe Program.cs**
+Aluno a1 = new Aluno();
+
+a1.Nome;<br/>
+a1.Idade;<br/>
+a1.Apresentar();
+
+#### **Mas, como Aluno tem atributos e método sendo que está vazia?**
+Porque ela está herdando da classe Pessoa.
+
+### **Polimorfismo**
+Consiste em distintas classes derivadas da mesma superclasse chamarem o mesmo método, mas cada subclasse pode apresentar de uma forma diferente, isso é, sobrepondo o método original.
+
+Para permitir que um método seja sobrescrito, é colocando um "virtual" na declaração dele, e um override na sub-classe. Por exemplo: <br/>
+
+public virtual void Apresentar(){
+     //Função
+}
+
+public class Aluno : Pessoa{
+
+    public override void Apresentar(){
+        //Edição
+    }
+
+}
+
+### **Classe Abstrata**
+Uma classe abstrata tem como objetivo ser exclusivamente herdada, e não pode ser instanciada.<br/>
+Assim sendo utilizada como um "molde", um método também deve ser abstrato, assim obrigatoriamente realizando um polimorfismo.
+
+![Preview image](/Arquivos/classeabst.png)
+###### Imagem retirada do curso de .Net da DIO, de Leonardo Buta
+<br/>
+
+### **Classe Selada**
+A classe selada tem como objetivo impedir que outras classes herdem dela, assim
+ela poder herdar mas não permite ser herdada
+
+Para selar uma classe é só colocar sealed na classe<br/>
+
+public **sealed** class NomeClasse{
+
+}
+<br/><br/>
+
+#### **Método selado**
+Também pode ocorrer de um método ser selado, impedindo de ser sobrescrito
+
+public **sealed** void Funcao(){
+
+}
+
+### **Classe Object**
+A classe System.Object é a mãe de todas as classes, ela tem como objetivo prover serviços de baixo nível para as suas classes filhas.
+
+### **Interface**
+Uma interface tem como objetivo prover um padrão, assim como uma classe abstrata, ela não pode ser instanciada, mas não entra no conceito de herança.<br/>
+Uma interface é chamada de implementação, e funciona como um "contrato", uma classe que chama uma interface deve obrigatoriamente implementar tudo o que for da Interface, e, elas também permitem que uma classe chame mais de uma interface.<br/>
+De preferência, elas devem receber um nome que inicie com I
