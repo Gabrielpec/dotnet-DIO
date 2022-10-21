@@ -162,3 +162,59 @@ A classe System.Object é a mãe de todas as classes, ela tem como objetivo prov
 Uma interface tem como objetivo prover um padrão, assim como uma classe abstrata, ela não pode ser instanciada, mas não entra no conceito de herança.<br/>
 Uma interface é chamada de implementação, e funciona como um "contrato", uma classe que chama uma interface deve obrigatoriamente implementar tudo o que for da Interface, e, elas também permitem que uma classe chame mais de uma interface.<br/>
 De preferência, elas devem receber um nome que inicie com I
+
+## **Banco de dados**
+Banco de dados é a alocação das informações de registros de usuários, informações, arquivos, dados e etc...
+![Preview image](/Arquivos/bd1.png)
+###### Imagem retirada do curso de .Net da DIO, de Leonardo Buta
+<br/>
+O sistema de banco de dados deve ser robusto, pois ele irá servir diversos sistemas, seja web, api, nuvem...
+<br/>
+
+### **Tipos de banco de dados**
+
+<br/>
+
+#### **Banco relacional:**
+O tipo mais utilizado atualmente, armazenando dados estruturados em tabelas, colunas e linhas, que se relacionam entre si.
+
+Quando altera o campo, todos os registros são alterados.
+
+#### **Banco não relacional:**
+Esse tipo não é organizado por tabela, e sim de maneira não estruturada ou semi-estruturada.
+
+Não precisa editar outros registros caso algo seja alterado no campo de um.
+
+<br/>
+
+#### **DataBase Management System (DBMS)**
+É um software utilizado para acessar, manipular e monitorar um sistema de banco de dados.
+
+#### **SQL (Structured Query Language)**
+É a linguagem de banco de dados usada para consultas e manipulações de dados.
+
+![Comandos SQL](Arquivos/sqlcmds.png)
+
+<br/>
+
+#### **Database:**
+É uma coleção de dados estruturados e agrupados, é composto de tabelas, procedures, views, etc.
+Database é a separação dos bancos de dados de cada sistema.
+
+#### **Tipos de dados em Banco de dados**
+
+**1- String**
+
+![Tipos Strings](Arquivos/bdstring.png)
+
+**2- Inteiros**
+
+![Tipos Int](Arquivos/bdint.PNG)
+
+**3- Outros tipos numéricos**
+
+![Outros tipos numéricos](Arquivos/bdtipos.PNG)
+
+**4- Datetime**
+
+![Datetime tipos](Arquivos/bddatetime.PNG)
