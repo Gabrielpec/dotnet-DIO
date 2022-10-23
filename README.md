@@ -218,3 +218,60 @@ Database é a separação dos bancos de dados de cada sistema.
 **4- Datetime**
 
 ![Datetime tipos](Arquivos/bddatetime.PNG)
+
+<br/>
+
+# **REFORÇAR**
+
+1. Estrutura projeto C#
+2. Referência de projeto
+3. Versões C#
+4. Listas
+5. Body Expressions
+6. Construtores
+7. Propriedade somente Leitura
+8. DateTime
+9. TryParse
+10. Exceções
+11. Filas
+12. Pilha
+13. Dictionary
+14. Tuplas
+15. Tuplas em métodos
+16. Descartes
+17. Desconstrutor
+18. If ternário
+19. Gerenciador de Pacotes Nuget
+20. Serialização
+21. manipulação de JSON
+22. Coleções
+23. JSON Viewer
+24. Deserialização
+25. Deserialização de objeto
+26. Tipos especiais
+27. tipos anônimos e nulos
+28. tipo dinâmico
+29. classe genérica
+30. método de extensão
+31. Stack e Heap
+32. Limpeza de memória
+33. gerenciamento de memória em C#
+
+## POO
+
+1. Paradigmas
+2. Abstração
+3. Encapsulamento
+4. Herança
+5. Polimorfismo
+6. Polimorfismo em tempo de execução
+7. Classe abstrata
+8. Construtor por herança
+9. classe selada
+10. método selado
+11. classe object 
+12. interface
+13. método padrão na interface
+
+## Banco de dados
+1. SQL Server
