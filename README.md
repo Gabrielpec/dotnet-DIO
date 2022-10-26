@@ -219,6 +219,21 @@ Database é a separação dos bancos de dados de cada sistema.
 
 ![Datetime tipos](Arquivos/bddatetime.PNG)
 
+**Constraints**
+![Const](Arquivos/constraint.png)
+
+**Stored Procedures**
+São comandos que são armazenados no database
+
+![Exemplo Procedures](Arquivos/procedure.png)
+
+![Executando Procedure](Arquivos/procedureuso.png)
+
+**Functions**
+São códigos SQL que você pode salvar diretamente no banco de dados, semelhante a uma procedure, mas com usos específicos e limitações, como por exemplo, devem sempre ter um retorno e aceita apenas parâmetros de entrada.
+
+![Exemplo Function](Arquivos/functionbd.png)
+
 <br/>
 
 # **REFORÇAR**
