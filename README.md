@@ -1,5 +1,33 @@
 # dotnet-DIO anotações
 
+## **Estrutura de Projeto**
+<br/>
+
+### **.CJPROJ**
+Arquivos CSPROJ (C Sharp Project) são arquivos de informações e configurações para cada projeto em C Sharp, também conhecido como Metadados, sua estrutura é em XML.
+
+**Exemplo de referência de um projeto para outro em C#**
+
+![referência](Arquivos/referenci.png)
+
+### **Arquivo Solution**
+Os arquivos Solution (Solução) tem como finalidade interligar diferentes projetos.
+Exemplo:<br/>
+>``Projeto1``</br>
+>``Projeto2``</br>
+>**``Projetos.sln``**</br>
+
+A conexão entre o projeto1 e o projeto2 é realizada através da Solução, assim organizando e separando funcionalidades de seu software.
+
+### **Commons**
+Projetos que recebem a nomenclatura de Commons são os que podem ser utilizados em mais de um projeto, isso é, ele recebe códigos que podem servir como uma base.
+
+Exemplo de uma estrutura que recebe uma Solution que vincula 3 projetos, sendo um deles uma common
+![Exemplo](Arquivos/estrutura.png)
+###### Imagem retirada do curso de .Net da DIO, de Leonardo Buta
+
+<br/><br/>
+
 ## **Gerenciamento de memória em C Sharp**
 <br/><br/>
 
@@ -238,8 +266,8 @@ São códigos SQL que você pode salvar diretamente no banco de dados, semelhant
 
 # **REFORÇAR**
 
-1. Estrutura projeto C#
-2. Referência de projeto
+1. ~~Estrutura projeto C#~~ ``ADICIONADO``
+2. ~~Referência de projeto~~ ``ADICIONADO``
 3. Versões C#
 4. Listas
 5. Body Expressions
