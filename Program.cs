@@ -24,7 +24,7 @@ cursoDeIngles.RemoverAluno(p1);
 cursoDeIngles.ListarAlunos();
 
 // p1.Nome = "Gabriel";
-// p1.Sobrenome = "Percam";
+// p1.Sobrenome = "Pc";
 // p1.Idade = 19;
 // p1.Apresentar();
 
