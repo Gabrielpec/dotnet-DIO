@@ -6,7 +6,7 @@
 ### **.CJPROJ**
 Arquivos CSPROJ (C Sharp Project) são arquivos de informações e configurações para cada projeto em C Sharp, também conhecido como Metadados, sua estrutura é em XML.
 
-**Exemplo de referência de um projeto para outro em C#**
+**Exemplo de referência de um projeto para outro em C#.**
 
 ![referência](Arquivos/referenci.png)
 
